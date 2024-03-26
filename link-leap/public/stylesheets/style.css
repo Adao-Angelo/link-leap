@@ -1,8 +1,20 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.header {
+  padding: 3rem;
+  text-align: center;
+}
+.icon {
+  height: 32px;
 }
 
-a {
-  color: #00B7FF;
+.content {
+  display: flex;
+  justify-content: center !important;
+  padding: 0;
+}
+
+.content form {
+  flex: 0 0 100%;
+  padding: 2rem 2rem 1rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
 }
