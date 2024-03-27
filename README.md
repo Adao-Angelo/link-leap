@@ -10,8 +10,10 @@ This is a url shortener made with the aim of shortening urls quickly and easily,
 
 
  # how to start the project !
-´´´cmd 
-
     cd link-leap
 
-´´´
+# next ...
+
+    npm  ci 
+
+so you can install the project's dependencies in the version you use
