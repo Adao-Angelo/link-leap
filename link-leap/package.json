@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "on": "nodemon ./bin/www"
+    "on": "nodemon -r dotenv/config ./bin/www",
+    "live": "node -r dotenv/config ./bin/www "
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^16.4.5",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
@@ -17,5 +19,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": "20"
   }
 }

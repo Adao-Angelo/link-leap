@@ -18,3 +18,21 @@
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
+
+.stats {
+  text-align: center;
+}
+
+.statsBox {
+  flex: 0 0 25%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: center !important;
+}

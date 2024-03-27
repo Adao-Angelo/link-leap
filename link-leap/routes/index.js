@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const link = require("../model/link");
+const Link = require("../model/link");
 
 function generateCode(url) {
   let text = "";
@@ -12,7 +13,34 @@ function generateCode(url) {
   return text;
 }
 
-/* GET home page. */
+router.get("/:code/stats", async (req, res, next) => {
+  const code = req.params.code;
+  const result = await Link.findOne({
+    where: {
+      code: code,
+    },
+  });
+
+  if (!result) return res.statusCode(404);
+  res.render("stats", result.dataValues);
+});
+
+router.get("/:code", async (req, res, next) => {
+  const code = req.params.code;
+
+  const result = await Link.findOne({
+    where: {
+      code: code,
+    },
+  });
+
+  if (!result) return res.statusCode(404);
+
+  result.hits++;
+  await result.save();
+
+  res.redirect(result.url);
+});
 
 router.get("/", function (req, res, next) {
   res.render("index", { title: "Link-leap" });
@@ -29,5 +57,5 @@ router.post("/new", async (req, res, next) => {
     code,
   });
 
-  res.send("http://localhost:3000/" + code);
+  res.render("stats", result.dataValues);
 });
