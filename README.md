@@ -12,8 +12,17 @@ This is a url shortener made with the aim of shortening urls quickly and easily,
  # how to start the project !
     cd link-leap
 
-# next ...
+## install dependencies ...
 
     npm  ci 
 
 so you can install the project's dependencies in the version you use
+
+
+## start project ... 
+
+    npm run start 
+
+##  open in your browser ...
+
+<a href = "http://localhost:3000/">Go to server page -></a>
