@@ -1,5 +1,7 @@
 # link-leap 
-<img scr= "./link-leap/public/images/dominios.png">
+
+<img src="./link-leap/public/images/dominios.png" alt="dominios" />
+
 
 This is a url shortener made with the aim of shortening urls quickly and easily, it may undergo updates such as:
 
@@ -9,3 +11,8 @@ This is a url shortener made with the aim of shortening urls quickly and easily,
 
  # how to start the project !
 
+    ´´´cmd 
+
+        cd link-leap
+
+    ´´´
