@@ -10,9 +10,8 @@ This is a url shortener made with the aim of shortening urls quickly and easily,
 
 
  # how to start the project !
+´´´cmd 
 
-    ´´´cmd 
+    cd link-leap
 
-        cd link-leap
-
-    ´´´
+´´´
